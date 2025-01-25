@@ -9,6 +9,7 @@ import java.util.UUID;
 // É minha entidade o objeto que estou trabalhando, onde defino que o usuario tem ID unico, e seto essa propriedade nelee
 //aqui também starto minha tabela e defino as colunas
 @Entity
+//@getter @setter
 @Table (name= "TB_USERS")
 public class UserModel implements Serializable {
 
@@ -19,6 +20,8 @@ public class UserModel implements Serializable {
     private UUID userId;
     private String name;
     private String email;
+
+    //lombok
 
     public UUID getUserId() {
         return userId;
